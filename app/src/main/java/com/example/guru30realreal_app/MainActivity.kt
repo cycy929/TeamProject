@@ -7,6 +7,7 @@ import android.util.Log
 import android.view.View
 import android.widget.Button
 import androidx.databinding.DataBindingUtil
+import androidx.databinding.DataBindingUtil.inflate
 import com.example.guru30realreal_app.auth.IntroActivity
 import com.example.guru30realreal_app.R
 import com.example.guru30realreal_app.board.BoardListLVAdapter
@@ -19,6 +20,7 @@ import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.ValueEventListener
 import com.google.firebase.ktx.Firebase
+import java.util.zip.Inflater
 
 class MainActivity : AppCompatActivity() {
 
@@ -29,7 +31,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
-        //val binding = DataBindingUtil.inflate(R.layout.activity_main,false)
+        //val binding = inflate(Inflater,R.layout.activity_main,null,false)
 
         val boardList = mutableListOf<BoardModel>()
         boardList.add(BoardModel())
