@@ -13,6 +13,7 @@ import com.example.guru30realreal_app.R
 import com.example.guru30realreal_app.board.BoardListLVAdapter
 import com.example.guru30realreal_app.board.BoardModel
 import com.example.guru30realreal_app.board.BoardWriteActivity
+import com.example.guru30realreal_app.databinding.ActivityMainBinding
 import com.example.guru30realreal_app.utils.FBRef
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
@@ -26,18 +27,20 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var auth: FirebaseAuth
 
+    private lateinit var binding : ActivityMainBinding
     private val boardDataList = mutableListOf<BoardModel>()
     private val TAG = MainActivity::class.java.simpleName
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
-        //val binding = inflate(Inflater,R.layout.activity_main,null,false)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         val boardList = mutableListOf<BoardModel>()
         boardList.add(BoardModel())
 
         val boardRVAdapter = BoardListLVAdapter(boardDataList)
-        //binding.boardListView.adapter = boardRVAdapter
+        binding.boardListView.adapter = boardRVAdapter
 
         auth = Firebase.auth
 
