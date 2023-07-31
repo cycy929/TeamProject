@@ -9,6 +9,7 @@ import android.provider.MediaStore
 import android.util.Log
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
+import com.example.guru30realreal_app.MainActivity
 import com.example.guru30realreal_app.R
 import com.example.guru30realreal_app.databinding.ActivityBoardWriteBinding
 import com.example.guru30realreal_app.utils.FBAuth
@@ -52,7 +53,8 @@ class BoardWriteActivity : AppCompatActivity() {
 
             Toast.makeText(this, "게시글 입력 완료", Toast.LENGTH_LONG).show()
 
-
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
 
 
         }
