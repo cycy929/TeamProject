@@ -13,19 +13,18 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="455dp"
+            android:layout_width="361dp"
+            android:layout_height="374dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="189dp"
+            android:layout_marginEnd="25dp"
             android:scaleType="fitXY"
             android:src="@drawable/mainpagelogo" />
-
-        <ImageView
-            android:src="@drawable/upperbg"
-            android:layout_alignParentBottom="true"
-            android:scaleType="fitXY"
-            android:layout_width="match_parent"
-            android:layout_height="360dp"/>
-
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -36,13 +35,13 @@
 
             <Button
                 android:id="@+id/loginBtn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
                 android:text="로그인"
                 android:textSize="20sp"
                 android:textStyle="bold"
-
-                android:layout_width="match_parent"
-                android:layout_margin="5dp"
-                android:layout_height="60dp"/>
+                app:iconTint="#9E9E9E" />
 
             <Button
                 android:id="@+id/joinBtn"
@@ -57,6 +56,24 @@
 
 
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="69dp"
+            android:layout_marginTop="66dp"
+            android:layout_marginEnd="70dp"
+            android:testStyle="bold"
+            android:text="Dear My Bestie"
+            android:textColor="@color/mainColor"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
     </RelativeLayout>
 
