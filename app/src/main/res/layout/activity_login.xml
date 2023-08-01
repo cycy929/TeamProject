@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".auth.LoginActivity"
@@ -12,14 +12,13 @@
         android:layout_height="150dp">
 
         <TextView
-            android:text="로그인"
-            android:gravity="center"
-            android:textStyle="bold"
-            android:textColor="#000000"
-            android:textSize="20sp"
             android:layout_width="match_parent"
-            android:layout_height="50dp"/>
-
+            android:layout_height="150dp"
+            android:gravity="bottom|center"
+            android:text="Dear My Bestie"
+            android:textColor="@color/design_default_color_primary"
+            android:textSize="40sp"
+            android:textStyle="bold" />
     </LinearLayout>
 
     <LinearLayout
