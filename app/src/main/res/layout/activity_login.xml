@@ -16,7 +16,7 @@
             android:layout_height="150dp"
             android:gravity="bottom|center"
             android:text="Dear My Bestie"
-            android:textColor="@color/design_default_color_primary"
+            android:textColor="#4C05B3"
             android:textSize="40sp"
             android:textStyle="bold" />
     </LinearLayout>
